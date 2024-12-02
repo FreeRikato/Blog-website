@@ -52,9 +52,11 @@ export const Blog_Page = () => {
                   authorName={blog.author?.username || 'Anonymous'}
                   blogId={blog.id}
                 />
-                <button onClick={() => deleteBlog({ blogId: blog.id })}>
-                  {' '}
-                  Delete{' '}
+                <button
+                  onClick={() => deleteBlog({ blogId: blog.id })}
+                  className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                >
+                  Delete
                 </button>
               </div>
             ))}
