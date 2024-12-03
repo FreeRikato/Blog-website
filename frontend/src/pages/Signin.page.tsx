@@ -27,13 +27,13 @@ export const Signin_Page = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-black text-gray-100 font-sans">
-      <div className="w-1/2 flex flex-col justify-center p-12">
-        <h1 className="text-5xl font-extrabold mb-8 flex items-center leading-tight">
+    <div className="min-h-screen flex flex-col md:flex-row bg-black text-gray-100 font-sans">
+      <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-12">
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-4 md:mb-8 flex items-center leading-tight">
           Login to your Account{' '}
-          <ChevronRight className="ml-4 text-blue-500" size={32} />
+          <ChevronRight className="ml-2 md:ml-4 text-blue-500" size={window.innerWidth >= 768 ? 32 : 24} />
         </h1>
-        <p className="mb-10 text-lg">
+        <p className="mb-6 md:mb-10 text-base md:text-lg">
           Don't have an Account?{' '}
           <Link to={'/signup'} className="text-blue-500 hover:underline">
             Signup
